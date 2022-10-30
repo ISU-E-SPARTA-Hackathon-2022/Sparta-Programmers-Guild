@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="../css/admin.css">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -133,6 +133,12 @@
       <i class='bx bx-menu' ></i>
       <span class="text">Admin Dashboard</span>
     </div>
+    <section class="home-section">
+
+      <div class="home-content">
+    <section class="attendance">
+      <div class="attendance-list">
+      <a href="../Hackathon/add_record.php" class= "btn"> <i class='bx bx-plus'></i>Add Student Information</a>
   </section>
   <script>
   let arrow = document.querySelectorAll(".arrow");
