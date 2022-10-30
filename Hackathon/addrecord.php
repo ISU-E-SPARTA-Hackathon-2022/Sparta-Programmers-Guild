@@ -9,9 +9,7 @@
    </head>
 <body>
   <div class="container">
-    <div class="title">Add Record</div>
-  
-
+    <div class="title">Children under 1 year old</div>
     <div class="content">
       <form action="#">
         <div class="user-details">
@@ -24,7 +22,31 @@
             <input type="text" placeholder="Enter" required>
           </div>
 
-       
+          <div class="title">Children under 5 years old</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Enter Number of Male</span>
+            <input type="text" placeholder="Enter" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Enter Number of Female</span>
+            <input type="text" placeholder="Enter" required>
+          </div>
+
+          <div class="title">Children 0-5 years old</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Enter Number of Male</span>
+            <input type="text" placeholder="Enter" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Enter Number of Female</span>
+            <input type="text" placeholder="Enter" required>
+          </div>
         <div class="button">
           <input type="submit" value="Save">
         </div>

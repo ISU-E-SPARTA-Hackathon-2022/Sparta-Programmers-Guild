@@ -1,11 +1,3 @@
-
-<?php
-
-session_start();
-
-require("db_connect.php");
-?>
-
 <!DOCTYPE html>
 <!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
 <html lang="en" dir="ltr">
@@ -153,85 +145,21 @@ require("db_connect.php");
 	
   <thead align="center">
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Mobile Number</th>
-      <th scope="col">To</th>
-      <th scope="col">From</th>
-      <th scope="col">Departure Date</th>
-      <th scope="col">Class</th>
-      <th scope="col">About</th>
-      <th scope="col">Action</th>
+      <th scope="col">Indicator</th>
+      <th scope="col">Total</th>
+      <th scope="col">Male</th>
+      <th scope="col">Female</th>
+      <th scope="col">Total Proportion</th>
+      <th scope="col">Male Proportion</th>
+      <th scope="col">Female Proportion</th>
     </tr>
   </thead>
   
   </tbody>
-
-
-<?php
-	$sql = "SELECT 
-			id, 
-			first, 
-			last, 
-			email,
-			mobile, 
-			area,
-			country,
-			departure,
-			ticket,
-			about
-			FROM oneway";
-	
-	$result = $conn->prepare($sql);
-	$result->execute();
-	
-	$count = $result->rowCount();
-	
-	if($result->rowCount()>0){
-		
-		$i=1;
-		while ($row = $result->fetch(PDO::FETCH_ASSOC))
-		{
-			echo  "<tr>
-						<td>" . $i . "</td>
-						<td>" . $row['first'] . "</td>
-						<td>" . $row['last'] . "</td>
-						<td>" . $row['email'] . "</td>
-						<td>" . $row['mobile'] . "</td>
-						<td>" . $row['area'] . "</td>
-						<td>" . $row['country'] . "</td>
-						<td>" . $row['departure'] . "</td>
-						<td>" . $row['ticket'] . "</td>
-						<td>" . $row['about'] . "</td>
-		<td>
-		<a class = 'btn btn-warning' href = 'oneway_edit.php?id=" . $row['id'] . "'>Edit</a> | ";
-	?>	
-		<a class = 'btn btn-warning' href = 'deleting.php?id=<?php echo $row['id'];?>' onClick = "return confirm('Are you sure want to delete this record?')">Delete</a></td>
-	<?php					
-		echo  "</tr>";
-		$i++;
-		}
-		echo "<tr><td colspan = '3'>Number of records: $count</td></tr>";
-		
-	}else
-	{
-		echo "<tr><td = colspan = '5'>No records found!</td></tr>";
-	}
-
-	
-?>
 	</tbody>
-	
 </table><hr>
-
 </body>
   </section>
-
- 
-
-
   <script>
   let arrow = document.querySelectorAll(".arrow");
   for (var i = 0; i < arrow.length; i++) {
