@@ -12,13 +12,18 @@ require("db_connect.php");
   <head>
     <meta charset="UTF-8">
     <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
-    <link rel="stylesheet" href="admin.css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="admin.css">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" type="image/x-icon" href="https://www.clipartkey.com/mpngs/m/228-2282541_isabela-cauayan-city-circle.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://lh3.googleusercontent.com/-HtZivmahJYI/VUZKoVuFx3I/AAAAAAAAAcM/thmMtUUPjbA/Blue_square_A-3.PNG" />
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     
-    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="forcompany.css">
+	<link rel="stylesheet" href="homepage.css">
+<script src="login.js"> </script>
    </head>
 <body>
   <div class="sidebar close">
@@ -142,12 +147,12 @@ require("db_connect.php");
       <span class="text">Barangay Secretary Dashboard</span>
     </div>
     <div class ="text-right">
-<a href="oneway.php" class="btn btn-md btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">Add Record</a>
-
-	<hr><table class="table table-success table-striped">
+<a href="addrecord.php" class="btn btn-lg btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">Add Record</a>
+</div>
+	<hr><table class="table table-dark table-striped">
 	
   <thead align="center">
-    <tr >
+    <tr>
       <th scope="col">#</th>
       <th scope="col">First Name</th>
       <th scope="col">Last Name</th>

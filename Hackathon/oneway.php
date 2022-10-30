@@ -2,15 +2,6 @@
 
 session_start();
 
-if(!isset($_SESSION["Username"])){
-	header("location:index.php"); exit();
-}
-
-if(isset($_REQUEST["logout"])){
-	session_destroy();
-	header("location:logout.php"); exit();
-}
-require("db_connect.php");
 ?>
 <?php
 
