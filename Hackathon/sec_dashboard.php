@@ -13,7 +13,7 @@
   <div class="sidebar close">
     <div class="logo-details">
       <i class='bx bxl-c-plus-plus'></i>
-      <span class="logo_name">Admin Dashboard</span>
+      <span class="logo_name">Dashboard</span>
     </div>
     <ul class="nav-links">
       <li>
@@ -131,7 +131,7 @@
   <section class="home-section">
     <div class="home-content">
       <i class='bx bx-menu' ></i>
-      <span class="text">Admin Dashboard</span>
+      <span class="text">Barangay Secretary Dashboard</span>
     </div>
   </section>
   <script>
