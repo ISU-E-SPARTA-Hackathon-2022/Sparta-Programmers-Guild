@@ -12,7 +12,7 @@
   left: 0;
   height: 100%;
   width: 260px;
-  background: #1dbe2b;
+  background: #11101d;
   z-index: 100;
   transition: all 0.5s ease;
 }
@@ -106,7 +106,7 @@
 .sidebar .nav-links li .sub-menu{
   padding: 6px 6px 14px 80px;
   margin-top: -10px;
-  background: #18cf55;
+  background: #1d1b31;
   display: none;
 }
 .sidebar .nav-links li.showMenu .sub-menu{
@@ -167,7 +167,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #16b323;
+  background: #1d1b31;
   padding: 12px 0;
   transition: all 0.5s ease;
 }
@@ -187,7 +187,7 @@
   object-fit: cover;
   border-radius: 16px;
   margin: 0 14px 0 12px;
-  background: #10bb2d;
+  background: #1d1b31;
   transition: all 0.5s ease;
 }
 .sidebar.close .profile-details img{
@@ -210,7 +210,7 @@
 }
 .home-section{
   position: relative;
-  background: #10b133;
+  background: #E4E9F7;
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
@@ -227,7 +227,7 @@
 }
 .home-section .home-content .bx-menu,
 .home-section .home-content .text{
-  color: #18a830;
+  color: #11101d;
   font-size: 35px;
 }
 .home-section .home-content .bx-menu{
@@ -257,6 +257,4 @@
     width: 100%;
     left: 0;
   }
-
-  
 }
